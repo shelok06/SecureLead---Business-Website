@@ -65,8 +65,8 @@ const Contact = () => {
 
         <div data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out" className="text my-5 text-xl font-semibold text-[#ffb238]">Feel Free To Contact And Reach Us For More Info !</div>
 
-        <div className="grid justify-center lg:grid-cols-2 my-5 mx-5">
-          <div data-aos="flip-right" data-aos-duration="500" data-aos-easing="ease-in-out" className='bg-[#f8f3ec] py-10 px-5 mx-5 shadow-xl'>
+        <div className="grid justify-center lg:grid-cols-2 my-5 mx-2 sm:mx-5">
+          <div data-aos="flip-right" data-aos-duration="500" data-aos-easing="ease-in-out" className='bg-[#f8f3ec] py-10 px-5 mx-2 sm:mx-5 shadow-xl'>
             <form id='contact-form' onSubmit={handleSubmit}>
               <input onBlur={() => setnameFocus(true)} type="text" value={form.name || ""} onChange={handleChange} name='name' id='name' placeholder='Full Name *' className={`w-full bg-white py-3 px-5 my-5 ${nameFocus && form.name.length < 3 ? " border border-red-600 text-red-600 outline-red-600" : ""}`} />
 

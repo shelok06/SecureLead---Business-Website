@@ -14,7 +14,7 @@ const MobileNav = () => {
 
   return (
     <>
-      <nav className='block xl:hidden fixed top-12 z-20 left-2'>
+      <nav className='block xl:hidden fixed top-12 z-20 left-2 max-h-[80px]'>
         <div onClick={() => setNavView(!NavView)} className="logo flex justify-center items-center bg-[#6a72826e] backdrop-blur-lg p-2.5 rounded-full w-fit">
           <img src="/Logo.png" alt="Logo" className='w-[54px] h-[50px]' />
           <h1 className='text-2xl font-extrabold text-[#e3b94b]'>SecureLead</h1>
