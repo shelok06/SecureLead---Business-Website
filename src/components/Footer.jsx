@@ -1,6 +1,7 @@
 import React from 'react'
 import { IoMailSharp } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
+import { NavLink } from 'react-router';
 
 const Footer = () => {
     return (
@@ -37,9 +38,9 @@ const Footer = () => {
 
                     <div className='text-white font-light text-sm my-10 px-5'>
                         <ul className='flex flex-col gap-2 sm:items-center'>
-                            <li>Home</li>
-                            <li>About SecureLeads</li>
-                            <li>Contact us</li>
+                            <NavLink to="/"><li>Home</li></NavLink>
+                            <NavLink to="/about"><li>About SecureLeads</li></NavLink>
+                            <NavLink to="/contact"><li>Contact us</li></NavLink>
                         </ul>
                     </div>
                 </div>
